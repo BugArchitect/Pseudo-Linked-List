@@ -4,7 +4,7 @@ Copyright © 2021年 BugArchitect. All rights reserved.
 */
 
 /*
-	Dynamic Array
+	Pseudo-Linked-List
 */
 
 #include <stdio.h>
