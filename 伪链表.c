@@ -1,5 +1,5 @@
 /*
-Program's Author: Secant
+Program's Author: Secant BugArchitetct
 Program's Name: Pseudo-Linked list
 Program's Function: Add,delete,change,find the data in the list by nodes.
 */
@@ -61,26 +61,26 @@ int main(void)
 	//
 	//printf("%d\n", num1.pNext->pNext->pNext->Vaule);		
 	
-	//while (pHead != NULL)			//±éÀúÁ´±í¸÷¸öÔªËØ
+	//while (pHead != NULL)			//éå†é“¾è¡¨å„ä¸ªå…ƒç´ 
 	//{
 	//    printf("%d\n",pHead->Vaule);
 	//	pHead = pHead->pNext;
 	//}
 	
 	
-	struct Node* pData = FindByData(&AddHead,9);			//½ÚµãµÄÊı¾İ
+	struct Node* pData = FindByData(&AddHead,9);			//èŠ‚ç‚¹çš„æ•°æ®
 	PutData(pData);
 	pData = FindByData(&AddHead,7);
 	PutData(pData);
 	pData = ChangeData(&AddHead,6,7);
 	TraverseAllNodes(&AddHead);
-	pData = FindByData(&AddHead, 9);			//½ÚµãµÄÊı¾İ
+	pData = FindByData(&AddHead, 9);			//èŠ‚ç‚¹çš„æ•°æ®
 	PutData(pData);
 	pData = FindByData(&AddHead, 7);
 	PutData(pData);
-	struct Node* pSubscript = FindBySubscript(&AddHead, 0);			//ÏÂ±ê
+	struct Node* pSubscript = FindBySubscript(&AddHead, 0);			//ä¸‹æ ‡
 	PutDataBySubscript(pSubscript);
-	printf("ÓĞ%d¸öÖØ¸´µÄÊı¾İ\n", RepeatedDataQuantity(&AddHead, 9));			//¸ÃÊı¾İÊÇ·ñÓĞ³öÏÖ¶à´Î
+	printf("æœ‰%dä¸ªé‡å¤çš„æ•°æ®\n", RepeatedDataQuantity(&AddHead, 9));			//è¯¥æ•°æ®æ˜¯å¦æœ‰å‡ºç°å¤šæ¬¡
 	
 	
 	system("pause");
@@ -89,7 +89,7 @@ int main(void)
 
 void TraverseAllNodes(struct Node* pHead)
 {
-	while (pHead != NULL)			//±éÀúÁ´±í¸÷¸öÔªËØ
+	while (pHead != NULL)			//éå†é“¾è¡¨å„ä¸ªå…ƒç´ 
 	{
 		printf("%d\n", pHead->Vaule);
 		pHead = pHead->pNext;
@@ -100,11 +100,11 @@ void PutDataBySubscript(struct Node* pNode)
 {
 	if (NULL == pNode)
 	{
-		printf("¸ÃÊı¾İ²»´æÔÚ\n");
+		printf("è¯¥æ•°æ®ä¸å­˜åœ¨\n");
 	}
 	else
 	{
-		printf("´æÔÚÖµÎª%dµÄÊı¾İ\n",pNode->Vaule);
+		printf("å­˜åœ¨å€¼ä¸º%dçš„æ•°æ®\n",pNode->Vaule);
 	}
 }
 
@@ -112,11 +112,11 @@ void PutData(struct Node* pNode)
 {
 	if (NULL == pNode)
 	{
-		printf("¸ÃÊı¾İ²»´æÔÚ\n");
+		printf("è¯¥æ•°æ®ä¸å­˜åœ¨\n");
 	}
 	else
 	{
-		printf("´æÔÚÖµÎª%dµÄÊı¾İ\n", pNode->Vaule);
+		printf("å­˜åœ¨å€¼ä¸º%dçš„æ•°æ®\n", pNode->Vaule);
 	}
 }
 
@@ -142,7 +142,7 @@ struct Node* FindByData(struct Node* pHead,int data)
 		{
 			return pHead;
 		}
-		pHead = pHead->pNext;			//Ö¸ÏòÏÂÒ»¸ö½Úµã
+		pHead = pHead->pNext;			//æŒ‡å‘ä¸‹ä¸€ä¸ªèŠ‚ç‚¹
 	}
 	return NULL;
 }
