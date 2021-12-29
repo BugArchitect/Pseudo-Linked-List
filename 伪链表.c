@@ -1,7 +1,10 @@
 /*
-Program's Author: Secant BugArchitetct
-Program's Name: Pseudo-Linked list
-Program's Function: Add,delete,change,find the data in the list by nodes.
+Created by BugArchitect on 2021/12/29.
+Copyright © 2021年 BugArchitect. All rights reserved.
+*/
+
+/*
+	Dynamic Array
 */
 
 #include <stdio.h>
